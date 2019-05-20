@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 
-from utils.ParseCmdArgs import ParseCmdArgs
-from utils.GaussPropagation import GaussPropagation
-from utils.EquationHandler import EquationHandler
+from pyCalcErr.ParseCmdArgs import ParseCmdArgs
+from pyCalcErr.GaussPropagation import GaussPropagation
+from pyCalcErr.EquationHandler import EquationHandler
 
 
 def main():

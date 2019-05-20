@@ -3,7 +3,7 @@ calculate Gauss error propagation and output corresponding latex formula
 
 Usage:
 ```
-python pyCalcErr.py <equation left side>", "<equation_right_side> <deriveAfter_1,...>")
+python pyCalcErr.py <equation left side>", "<equation_right_side> <deriveAfter_1,...>"
 ```
 
 Example: 

@@ -8,10 +8,10 @@ pip install pyCalcErr
 ```
 Usage:
 ```
-python pyCalcErr.py <equation left side>", "<equation_right_side> <deriveAfter_1,...>"
+pyCalcErr <equation left side>", "<equation_right_side> <deriveAfter_1,...>"
 ```
 
 Example: 
 ```
-python pyCalcErr.py F 1/2*k*x**2 'x'
+pyCalcErr E_pot 1/2*k*x**2 'x'
 ```

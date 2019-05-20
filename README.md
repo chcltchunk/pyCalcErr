@@ -1,6 +1,6 @@
 # pyCalcErr
 calculate Gauss error propagation and output corresponding latex formula
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}]
+  h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
 install using pip:
 

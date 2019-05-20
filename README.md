@@ -1,5 +1,6 @@
 # pyCalcErr
 calculate Gauss error propagation and output corresponding latex formula
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}]
 
 install using pip:
 

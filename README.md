@@ -1,5 +1,6 @@
 # pyCalcErr
 calculate Gauss error propagation and output corresponding latex formula
+h<math><msub><mi>s</mi><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>)</mo></mrow></msub><mo>=</mo><msqrt><msup><mfenced><mrow><mfrac><mrow><mo>&#x2202;</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>)</mo></mrow><mrow><mo>&#x2202;</mo><mi>x</mi></mrow></mfrac><msub><mi>s</mi><mi>x</mi></msub></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><mfrac><mrow><mo>&#x2202;</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>)</mo></mrow><mrow><mo>&#x2202;</mo><mi>y</mi></mrow></mfrac><msub><mi>s</mi><mi>y</mi></msub></mrow></mfenced><mn>2</mn></msup><mo>+</mo><mo>.</mo><mo>.</mo><mo>.</mo></msqrt></math>h
   h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
 install using pip:

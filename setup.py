@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
      name='pyCalcErr',
-     version='0.3',
+     version='0.3.1',
      author="Jonas Oldenstaedt",
      description="Gauss error propagation with latex formula",
      long_description=long_description,
@@ -20,6 +20,7 @@ setup(
          "Operating System :: OS Independent",
      ],
      install_requires=["pytexit", "sympy"],
+     python_requires='>=3',
      entry_points={
         "console_scripts": [
             "pyCalcErr=pyCalcErr.pyCalcErr:main",

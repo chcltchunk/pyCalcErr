@@ -1,0 +1,3 @@
+pytexit==0.3.2
+sympy==1.4
+setuptools==41.0.1

@@ -7,8 +7,8 @@ class ParseCmdArgs:
     def get_args(self):
         if len(sys.argv) < 4:
             print("Usage: python pyCalcErr.py <equation left side>", end='')
-            print("<equation_right_side> <deriveAfter_1,error_value_1,...>")
-            print("Example: python pyCalcErr.py F 1/2*k*x**2 x,0.1")
+            print("<equation_right_side> <deriveAfter_1,...>")
+            print("Example: python pyCalcErr.py F 1/2*k*x**2 x")
             sys.exit(1)
         try:
             base_var = str(sys.argv[1])

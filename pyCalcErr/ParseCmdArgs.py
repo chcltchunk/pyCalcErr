@@ -1,4 +1,5 @@
 import sys
+import readline    
 
 
 # parse command line arguments
@@ -21,21 +22,36 @@ class ParseCmdArgs:
             sys.exit(2)
         return base_var, equation, error_variables
 
-    # accept user input to define several variables
+    # accept or edit user input to define several variables
     def accept_user_input(self, vars_to_define):
         var_definitions = {}
         print("Define the values and errors ", end='')
         print("of the following variables (float): ")
         for var in vars_to_define:
-            input_var = input("{} = ".format(var))
             while True:
                 try:
-                    var_definitions[var] = float(input_var)
-                    break
-                except Exception as e:
-                    print(e)
-                    print("this is not a valid entry, ", end='')
-                    print("please enter a float number")
-                    pass
-                input_var = input("{} = ".format(var))
+                    # check if a variable has already been defined
+                    recent = str(vars_to_define[var])
+                    readline.set_startup_hook(lambda: 
+                            readline.insert_text(recent))
+                finally:
+                    try:
+                        new_val = float(input("{} = ".format(var)))
+                        var_definitions[var] = new_val
+                        break
+                    except Exception as e:
+                        print(e)
+                        print("this is not a valid entry, ", end='')
+                        print("please enter a float number")
+                        pass
+                    finally:
+                        readline.set_startup_hook()
         return var_definitions
+
+    # ask to rerun calculation
+    def ask_to_rerun(self):
+        rerun = input('rerun for the same equation? [yes|no]: ')
+        if rerun in ['y', 'ye', 'yes', 'Yes', 'Ye', 'Y', '']:
+            return True
+        else:
+            return False

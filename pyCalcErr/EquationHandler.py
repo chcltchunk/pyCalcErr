@@ -7,8 +7,8 @@ class EquationHandler():
 
     >>> eh = EquationHandler()
 
-    >>> sorted(eh.extract_variables("s_V + D_e",
-    ...                             "V = D_e*(1-exp(-alpha*(r-r_e)))**2"))
+    >>> eh.extract_variables("s_V + D_e",
+    ...                      "V = D_e*(1-exp(-alpha*(r-r_e)))**2")
     ['D_e', 'alpha', 'r', 'r_e', 's_V']
 
     # >>> eh.evaluate_equation("D_e*(1-e**(-alpha*(r-r_e)))**2", var_defs)
@@ -39,7 +39,7 @@ class EquationHandler():
         |lgamma|pi"""
         variables = list(set(filter(None, re.split(regex,
                                     error_eq + ' ' + equation))))
-        return variables
+        return sorted(variables)
 
     def define_vars(self, definitions):
         self.definitions = definitions

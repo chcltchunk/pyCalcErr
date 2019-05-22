@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
      name='pyCalcErr',
-     version='0.3.1',
+     version='0.4.1',
      author="Jonas Oldenstaedt",
      description="Gauss error propagation with latex formula",
      long_description=long_description,

@@ -18,7 +18,11 @@ class ParseCmdArgs:
             equation = str(sys.argv[2])
             error_variables = str(sys.argv[3]).split(",")
         except Exception as e:
-            print(e, 'recheck your request')
+            print(e, "recheck your request")
+            sys.exit(2)
+        if len(equation.split(",")) > 1:
+            print("you may not use comma within your equation")
+            print("recheck your request")
             sys.exit(2)
         return base_var, equation, error_variables
 
@@ -34,6 +38,8 @@ class ParseCmdArgs:
                     recent = str(vars_to_define[var])
                     readline.set_startup_hook(lambda: 
                             readline.insert_text(recent))
+                except TypeError:
+                    pass
                 finally:
                     try:
                         new_val = float(input("{} = ".format(var)))

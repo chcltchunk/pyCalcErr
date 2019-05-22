@@ -50,7 +50,7 @@ class ParseCmdArgs:
 
     # ask to rerun calculation
     def ask_to_rerun(self):
-        rerun = input('rerun for the same equation? [yes|no]: ')
+        rerun = input('rerun the calculation for the same equation? [y|n]: ')
         if rerun in ['y', 'ye', 'yes', 'Yes', 'Ye', 'Y', '']:
             return True
         else:
